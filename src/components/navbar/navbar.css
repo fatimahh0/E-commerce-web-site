@@ -1,0 +1,87 @@
+/* Styles pour la barre de navigation */
+.navbar{
+    display: flex; /* Affiche la barre de navigation en ligne */
+    justify-content: space-between; /* Sépare la barre de navigation de manière égale entre les éléments */
+    padding: 16px; /* Ajoute un rembourrage intérieur de 16 pixels à la barre de navigation */
+    box-shadow: 0 1px 3px -2px black; /* Ajoute une ombre portée à la barre de navigation */
+}
+
+/* Styles pour le logo de la barre de navigation */
+.nav-logo{
+    display: flex; /* Affiche le logo en ligne */
+    align-items: center; /* Centre le logo verticalement */
+    gap: 10px; /* Ajoute un espace de 10 pixels entre le logo et le texte */
+}
+
+.nav-logo p {
+    color: #171717; /* Définit la couleur du texte du logo */
+    font-size: 38px; /* Définit la taille de la police du texte du logo */
+    font-weight: 600; /* Définit l'épaisseur de la police du texte du logo */
+}
+
+/* Styles pour le menu de la barre de navigation */
+.nav-menu{
+    display: flex; /* Affiche le menu en ligne */
+    align-items: center; /* Centre le menu verticalement */
+    list-style: none; /* Supprime les puces de la liste */
+    gap: 50px; /* Ajoute un espace de 50 pixels entre les éléments du menu */
+    color: #626262; /* Définit la couleur du texte du menu */
+    font-size: 20px; /* Définit la taille de la police du texte du menu */
+    font-weight: 500; /* Définit l'épaisseur de la police du texte du menu */
+}
+
+.nav-menu li{
+    display: flex; /* Affiche les éléments du menu en ligne */
+    flex-direction: column; /* Affiche les éléments du menu en colonne */
+    align-items: center; /* Centre les éléments du menu verticalement */
+    justify-content: center; /* Centre les éléments du menu horizontalement */
+    gap: 3px; /* Ajoute un espace de 3 pixels entre les éléments du menu */
+    cursor: pointer; /* Change le curseur en main lorsque la souris survole un élément du menu */
+}
+
+.nav-menu hr{
+    border: none; /* Supprime le contour de la ligne */
+    width: 80%; /* Définit la largeur de la ligne à 80% de la largeur du parent */
+    height: 3px; /* Définit la hauteur de la ligne à 3 pixels */
+    border-radius: 10px; /* Ajoute une arrondissement de 10 pixels à la ligne */
+    background: #ff4141; /* Définit la couleur de fond de la ligne */
+}
+
+/* Styles pour la section de connexion et de panier de la barre de navigation */
+.nav-login-cart{
+    display: flex; /* Affiche la section en ligne */
+    align-items: center; /* Centre la section verticalement */
+    gap: 45px; /* Ajoute un espace de 45 pixels entre la section de connexion et la section de panier */
+}
+
+.nav-login-cart button{
+    width:157px; /* Définit la largeur du bouton à 157 pixels */
+    height: 58px; /* Définit la hauteur du bouton à 58 pixels */
+    outline: none; /* Supprime le contour du bouton */
+    border:1px solid #7a7a7a; /* Ajoute une bordure de 1 pixel à la couleur gris clair au bouton */
+    border-radius: 75px; /* Ajoute une arrondissement de 75 pixels au bouton */
+    color: #515151; /* Définit la couleur du texte du bouton */
+    font-size: 20px; /* Définit la taille de la police du texte du bouton */
+    font-weight: 200; /* Définit l'épaisseur de la police du texte du bouton */
+    background: white ; /* Définit la couleur de fond du bouton */
+    cursor: pointer; /* Change le curseur en main lorsque la souris survole le bouton */
+}
+
+/* Styles pour le compteur de panier de la barre de navigation lorsque le bouton est enfoncé */
+.nav-login-cart button:active{
+    background: #f3f3f3; /* Définit la couleur de fond du bouton lorsque celui-ci est enfoncé */
+}
+
+/* Styles pour le compteur de panier de la barre de navigation */
+.nav-cart-count{
+    width: 22px; /* Définit la largeur du compteur à 22 pixels */
+    height: 22px; /* Définit la hauteur du compteur à 22 pixels */
+    display: flex; /* Affiche le compteur en ligne */
+    justify-content: center; /* Centre le compteur horizontalement */
+    margin-top: -35px; /* Décale le compteur de -35 pixels vers le haut */
+    margin-left: -55px; /* Décale le compteur de -55 pixels vers la gauche */
+    border-radius: 11px; /* Ajoute une arrondissement de 11 pixels au compteur */
+    font-size: 14px; /* Définit la taille de la police du texte du compteur */
+    background: red; /* Définit la couleur de fond du compteur */
+    color: white ; /* Définit la couleur du texte du compteur */
+}
